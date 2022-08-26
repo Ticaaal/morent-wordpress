@@ -1,0 +1,416 @@
+/*
+Theme Name: Morent
+Theme URI: https://emmamuelbaya.com/
+Author: Emmanuel Baya
+Author URI: https://emmamuelbaya.com/
+Description:This is a Wordpress theme
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1..0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: morent
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+body {
+	overflow-x:hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3% 1%;
+}
+
+.header-logo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  color: #3563e9;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: #3563e9;
+}
+
+.header-searchbar {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #c3d4e9;
+  border-radius: 25px;
+  padding: 0 20% 0 0%;
+}
+
+.header-searchbar > * {
+  line-height: 3;
+}
+
+input{
+	background-color:#FFFFFF;
+}
+
+.header-searchbar form {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0.5rem;
+}
+
+.header-searchbar form > * {
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.header-searchbar form input[type="search"] {
+  border: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.header-searchbar button:hover {
+  opacity: 0.5;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+.header-nav > li {
+  display: flex;
+  flex-direction: row;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding-right: 25px;
+}
+
+.header-nav > li > a {
+  justify-content: space-around;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1a202c;
+}
+
+.burger-menu{
+	display:none;
+}
+
+.main-content {
+  padding: 3% 7%;
+  background-color: #f6f7f9;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.row-cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 3%;
+	flex-wrap: wrap;
+}
+
+.item-car {
+  padding: 2%;
+  background-color: #ffffff;
+  width: 27%;
+	margin-bottom: 3%;
+}
+
+.car-name {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.car-category {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #90a3bf;
+}
+
+.car-image {
+  padding: 8% 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+	position: relative;
+}
+
+.car-spec::before {
+    content: '';
+    background-image: url(https://emmanuel-baya.8bitstudio.ch/wp-content/uploads/2022/08/shadow-1.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -65px;
+    background-repeat: no-repeat;
+}
+
+.car-spec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+	position: relative;
+}
+
+.car-spec li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #90a3bf;
+  display: flex;
+}
+
+.gas-tank::before {
+  content: url("https://emmanuel-baya.8bitstudio.ch/wp-content/uploads/2022/08/gas-tank.svg");
+  padding-right: 10px;
+}
+
+.car-gear::before {
+  content: url("https://emmanuel-baya.8bitstudio.ch/wp-content/uploads/2022/08/steering-wheel.svg");
+  padding-right: 10px;
+}
+
+.number-seats::before {
+  content: url("https://emmanuel-baya.8bitstudio.ch/wp-content/uploads/2022/08/profile-2user.svg");
+  padding-right: 10px;
+}
+
+.bottom-car {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.day {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #90a3bf;
+  line-height: 30px;
+}
+
+.rent-now {
+  background-color: #3563e9;
+  border-radius: 4px;
+  border: 1px solid #3563e9;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2% 4%;
+}
+
+.show-more {
+  background-color: #3563e9;
+  border-radius: 4px;
+  border: 1px solid #3563e9;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2% 4%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 2% 5%;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(19, 19, 19, 0.16);
+  padding-bottom: 5%;
+}
+
+.footer-logo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  color: #3563e9;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: #3563e9;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  color: #131313;
+  opacity: 60%;
+  font-weight: 500;
+  text-transform: initial;
+  line-height: 20px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+ul > header {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a202c;
+  padding-bottom: 25%;
+}
+
+.footer-menu-list li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #131313;
+  opacity: 60%;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a202c;
+  padding: 8% 0;
+}
+
+.copyright {
+  flex-grow: 10;
+}
+
+.privacy-policy {
+  flex-grow: 1;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.checkbox{
+  display: none;
+}
+
+/***************** MOBILE **********************/
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 992px) and (-webkit-min-device-pixel-ratio: 3) {
+	
+	body{
+		background-color:#f6f7f9;
+	}
+	
+	.main-content{
+		width: 90%;
+		padding: 3% 0;
+	}
+	
+	.header-logo{
+		display: flex;
+		justify-content: space-around;
+		
+	}
+	
+	.header-top{
+		flex-direction:column;
+		padding: 0;
+		width: 100%;
+		margin: 5% 0;
+	}
+	
+	.header-searchbar {
+    width: 70%;
+		background-color: #FFFFFF;
+		margin: 2% auto 0 auto;
+  }
+	
+	.rsm-burger{
+		line-height: 1.5 !important;
+	}
+	
+	.fas fa-search{
+		
+	display:none !important;
+	}
+
+  .header-nav {
+    display: none;
+  }
+
+	.row-cars{
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.item-car{
+		width:95%;
+		padding: 0 2% 5% 2%;
+		margin:0 auto 3% auto;
+	}
+	
+	.footer-top{
+		flex-direction: column;
+	}
+	
+	.footer-logo{
+		text-align:center;
+	}
+	
+	.footer-menu{
+		flex-direction:row;
+	}
+	
+	ul>header{
+		padding-bottom: 2%;
+		font-size: 12px;
+	}
+	
+	.footer-menu-list{
+		margin: 0 auto;
+		padding: 0;
+	}
+	
+	.footer-menu-list li{
+		font-size: 10px;
+	}
+	
+	.footer-bottom{
+		font-size: 8px;
+	}
+
+}
